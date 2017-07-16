@@ -1,0 +1,18 @@
+{
+  "name": "snippets",
+  "version": "1.0.0",
+  "description": "Snippets",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest"
+  },
+  "keywords": [
+    "snippets"
+  ],
+  "author": "David Oddoye <oddoyedavid@gmail.com> (https://www.oddoye.com)",
+  "license": "ISC",
+  "dependencies": {
+    "@types/jest": "^20.0.2",
+    "jest": "^20.0.4"
+  }
+}
