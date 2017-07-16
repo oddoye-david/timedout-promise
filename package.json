@@ -1,17 +1,18 @@
 {
-  "name": "snippets",
+  "name": "timedout-promise",
   "version": "1.0.0",
-  "description": "Snippets",
-  "main": "index.js",
+  "description": "Timeout your promises",
+  "main": "timedoutPromise.js",
   "scripts": {
     "test": "jest"
   },
   "keywords": [
-    "snippets"
+    "timeout",
+    "promises"
   ],
   "author": "David Oddoye <oddoyedavid@gmail.com> (https://www.oddoye.com)",
-  "license": "ISC",
-  "dependencies": {
+  "license": "MIT",
+  "devDependencies": {
     "@types/jest": "^20.0.2",
     "jest": "^20.0.4"
   }
