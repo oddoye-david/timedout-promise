@@ -5,7 +5,7 @@
  * @param {Number} ms
  * @returns Promise
  */
-function timeout(ms) {
+function _timeout(ms) {
   if (typeof ms !== 'number' || isNaN(ms)) {
     throw new Error('ms must be a number');
   } else if (ms < 1) {
@@ -32,7 +32,7 @@ function timedoutPromise(ms, promiseFunc) {
     throw new Error('promiseFunc is required');
   }
 
-  return Promise.race([timeout(ms), promiseFunc]);
+  return Promise.race([_timeout(ms), promiseFunc]);
 }
 
 module.exports = timedoutPromise;

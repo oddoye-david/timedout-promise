@@ -1,6 +1,6 @@
 const timedoutPromise = require('../timedoutPromise');
 
-describe('timedoutPromise test', () => {
+describe('timedoutPromise parameter test', () => {
 
   test('should throw if ms is not a number', () => {
     expect(() => {
@@ -20,6 +20,10 @@ describe('timedoutPromise test', () => {
     }).toThrow('promiseFunc is required');
   });
 
+});
+
+
+describe('timedoutPromise functionality test', () => {
   test('should reject if timeout occures before promiseFunc resolves', () => {
     const hundredMillisecondPromise = () => new Promise((resolve, reject) => {
       setTimeout(() => {
@@ -37,5 +41,4 @@ describe('timedoutPromise test', () => {
     });
     return expect(timedoutPromise(200, hundredMillisecondPromise())).resolves.toBe('Resolved after 100ms.');
   });
-
 });
