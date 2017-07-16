@@ -2,6 +2,11 @@
 
 Utility function to set a timeout in milliseconds for promises.
 
+## Install
+```
+> yarn add timedout-promise
+```
+
 ## Usage
 ```
 const timedoutPromise = require('timedout-promise');
